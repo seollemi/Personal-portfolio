@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kryss Pingol — Software Engineer / Mobile Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <div class="logo"><span class="logo-dot"></span> Kryss Pingol</div>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg id="iconMoon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+          <svg id="iconSun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="scan-grid" id="scanGrid"></div>
+  <div class="wrap hero-inner">
+    <div class="hero-text">
+      <div class="eyebrow mono">SOFTWARE ENGINEER · MOBILE DEVELOPER</div>
+      <h1>Building things that<br>read, scan, and <span>respond.</span></h1>
+      <p>I'm Kryss Cainelee Pingol, I build mobile apps and backend systems, and lately I've been learning computer vision and Spring Boot.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View projects</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        <a href="Resume/pingol-resume.pdf" target="_blank" class="btn btn-ghost">Resume</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <div class="photo-frame">
+        <span class="corner tl"></span><span class="corner tr"></span>
+        <span class="corner bl"></span><span class="corner br"></span>
+        <img src="Images/profile.jpg" alt="Kryss Pingol" id="profileImg" onerror="this.style.display='none'; document.getElementById('profileFallback').style.display='flex';">
+        <div class="photo-fallback" id="profileFallback">KP</div>
+        <div class="photo-scanline"></div>
+      </div>
+      <div class="photo-badge mono">☕ 100% CAFFEINE</div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <div>
+      <div class="section-tag mono">01 / ABOUT</div>
+      <h2 class="section-title">A bit about me</h2>
+      <p>I'm a software engineer focused on mobile development, with a growing interest
+        in computer vision and backend systems. Most of my work sits at the intersection of Android apps and the APIs that power them. 
+        I like owning a feature end to end, from the interface down to the database.</p>
+      <p>I enjoy the kind of project where "does this actually work in the real world" is the hard part, not just the code.</p>
+    </div>
+    <div class="stat-list">
+      <div class="stat"><b>Mobile</b><span>Kotlin, native Android development</span></div>
+      <div class="stat"><b>Backend</b><span>Java, APIs, PHP</span></div>
+      <div class="stat"><b>Web development</b><span>HTML, CSS, JavaScript</span></div>
+      <div class="stat"><b>Game development</b><span>GDScript, Dialogic, Godot engine</span></div>
+      <div class="stat"><b>Vision</b><span>OpenCV-based image processing</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="section-tag mono">02 / EXPERIENCE</div>
+    <h2 class="section-title">Experience</h2>
+    <div class="exp-card">
+      <div class="exp-head">
+        <div>
+          <h3>Software Developer Intern</h3>
+          <div class="exp-org">National Telecommunications Commission (NTC), Quezon City, Metro Manila</div>
+        </div>
+        <span class="exp-date mono">Dec 2025 – Mar 2026</span>
+      </div>
+      <ul class="exp-list">
+        <li>Built an Android-based Optical Mark Recognition (OMR) app in Android Studio using Kotlin and OpenCV to automate scoring of Radio Operations Examination exams, improving checking speed by 60%.</li>
+        <li>Incorporated the OpenCV library for detecting shaded answers on Radio Operations Examination sheets, achieving 95% detection accuracy.</li>
+        <li>Delivered a fully documented codebase with handoff documentation to support continued maintenance and algorithmic improvements.</li>
+        <li>Assisted with laptop and PC setup, configuration, and troubleshooting to support day-to-day office operations.</li>
+        <li>Provided technical assistance and IT standby support during meetings and organizational activities.</li>    
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="section-tag mono">03 / SKILLS</div>
+    <h2 class="section-title">What I work with</h2>
+    <div class="skill-groups">
+      <div class="skill-card">
+        <h3>Languages</h3>
+        <div class="chip-row">
+          <span class="chip">Java</span>
+          <span class="chip">Kotlin</span>
+          <span class="chip">Python</span>
+          <span class="chip">C++</span>
+          <span class="chip">GDScript</span>
+          <span class="chip">SQL</span>
+          <span class="chip">PHP</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">HTML/CSS</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>Tools & Platforms</h3>
+        <div class="chip-row">
+          <span class="chip">Git</span>
+          <span class="chip">GitHub Actions CI/CD</span>
+          <span class="chip">Android Studio</span>
+          <span class="chip">Godot Engine</span>
+          <span class="chip">VS Code</span>
+          <span class="chip">IntelliJ</span>
+          <span class="chip">Google Cloud Platform</span>
+          <span class="chip">Google Colab</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>Libraries & Frameworks</h3>
+        <div class="chip-row">
+          <span class="chip">OpenCV</span>
+          <span class="chip">Pandas</span>
+          <span class="chip">Matplotlib</span>
+          <span class="chip">VLCJ</span>
+          <span class="chip">Dialogic</span>
+          <span class="chip">Bootstrap</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>Networking & Security</h3>
+        <div class="chip-row">
+          <span class="chip">Basic Networking</span>
+          <span class="chip">Endpoint Security</span>
+          <span class="chip">Security & Connectivity Support</span>
+          <span class="chip">Cisco Packet Tracer</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>IT Support</h3>
+        <div class="chip-row">
+          <span class="chip">PC/Laptop Setup</span>
+          <span class="chip">Hardware Troubleshooting</span>
+          <span class="chip">Software Troubleshooting</span>
+          <span class="chip">Workstation Configuration</span>
+          <span class="chip">Technical Support</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="section-tag mono">04 / PROJECTS</div>
+    <h2 class="section-title">Projects</h2>
+    <div class="project-grid">
+
+      <div class="project-card">
+        <div class="project-banner banner-1">
+          <img src="Images/hk.PNG" alt="Hooked gameplay" class="project-banner-img" onerror="this.style.display='none';">
+          <svg class="banner-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="6" width="20" height="12" rx="3"/><path d="M7 10v4M5 12h4"/><circle cx="16" cy="10.5" r="1"/><circle cx="18.5" cy="13" r="1"/></svg>
+        </div>
+        <div class="project-body">
+          <span class="project-tag">GAME DEV</span>
+          <h3>Hooked</h3>
+          <p>A 2D top-down cybersecurity awareness game in Godot, achieving a 71.43% increase in user cybersecurity knowledge. Custom Dialogic 2 dialogue system cut hard-coded text by 50%.</p>
+          <div class="project-tags">
+            <span class="chip">GDScript</span>
+            <span class="chip">Dialogic</span>
+            <span class="chip">Godot engine</span>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/seollemi/Hooked" target="_blank">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 00-1.3-3.2 4.2 4.2 0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 00-6.2 0C7.5 4.8 6.4 5.1 6.4 5.1a4.2 4.2 0 00-.1 3.2A4.6 4.6 0 005 11.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V23"/></svg>
+              Code
+            </a>
+            <a href="https://seollemi.itch.io/hooked" target="_blank">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg>
+              Demo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-banner banner-2">
+          <img src="Images/omr.JPG" alt="OMR scanner app" class="project-banner-img" onerror="this.style.display='none';">
+          <svg class="banner-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="3" width="16" height="18" rx="2"/><circle cx="9" cy="9" r="1.4" fill="currentColor" stroke="none"/><circle cx="15" cy="9" r="1.4" fill="currentColor" stroke="none"/><circle cx="9" cy="14" r="1.4" fill="currentColor" stroke="none"/><circle cx="15" cy="14" r="1.4" fill="currentColor" stroke="none"/><path d="M8 18h8"/></svg>
+        </div>
+        <div class="project-body">
+          <span class="project-tag">MOBILE · COMPUTER VISION</span>
+          <h3>Radio Operations Exam OMR Scanner</h3>
+          <p>An Android optical mark recognition app that reads and grades bubble-sheet answer forms automatically using OpenCV, built during my internship at NTC — 95% detection accuracy, 60% faster checking.</p>
+          <div class="project-tags">
+            <span class="chip">Kotlin</span>
+            <span class="chip">Gradle</span>
+            <span class="chip">OpenCV</span>
+            <span class="chip">Android Studio</span>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/seollemi/IT_Omr" target="_blank">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 00-1.3-3.2 4.2 4.2 0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 00-6.2 0C7.5 4.8 6.4 5.1 6.4 5.1a4.2 4.2 0 00-.1 3.2A4.6 4.6 0 005 11.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V23"/></svg>
+              Code
+            </a>
+            <span class="project-footer-note mono">NTC internship project</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-banner banner-3">
+          <img src="Images/comodity.png" alt="Retail price analysis charts" class="project-banner-img" onerror="this.style.display='none';">
+          <svg class="banner-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19V9M10 19V5M16 19v-7M4 19h16"/></svg>
+        </div>
+        <div class="project-body">
+          <span class="project-tag">DATA ANALYSIS</span>
+          <h3>Philippine Retail Price Data Analysis</h3>
+          <p>Exploratory analysis of Philippine Statistics Authority retail data for top vegetable commodities across all regions. Built a cleaning pipeline with pandas melt, datetime parsing, and missing-value handling, then visualized 5 years of price trends and regional disparities.</p>
+          <div class="project-tags">
+            <span class="chip">Python</span>
+            <span class="chip">Pandas</span>
+            <span class="chip">Matplotlib</span>
+            <span class="chip">Google Colab</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-banner banner-4">
+          <img src="Images/satzu.PNG" alt="Satzu YT Downloader app" class="project-banner-img" onerror="this.style.display='none';">
+          <svg class="banner-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 8l-8.5 5L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M12 12v5"/></svg>
+        </div>
+        <div class="project-body">
+          <span class="project-tag">DESKTOP APP</span>
+          <h3>Satzu YT Downloader</h3>
+          <p>A Java desktop app that uses YT-dlp and FFmpeg to download and convert YouTube videos to user-specified formats and quality settings, with a VLCJ-powered native video canvas for previewing clips before or after download.</p>
+          <div class="project-tags">
+            <span class="chip">Java</span>
+            <span class="chip">YT-dlp</span>
+            <span class="chip">VLCJ</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="certifications">
+  <div class="wrap">
+    <div class="section-tag mono">05 / CERTIFICATIONS</div>
+    <h2 class="section-title">Certifications</h2>
+    <div class="cert-list">
+      <div class="cert-item">
+        <div>
+          <b>Introduction to Software Architecture · Azure Fundamentals</b>
+          <span>Simplilearn SkillUp</span>
+        </div>
+        <span class="mono cert-date">Oct 2025</span>
+      </div>
+      <div class="cert-item">
+        <div>
+          <b>Security and Connectivity Support · Endpoint Security</b>
+          <span>Cisco Networking Academy</span>
+        </div>
+        <span class="mono cert-date">Sep 2025</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-box">
+      <h2>Let's build something.</h2>
+      <p>Open to opportunities in mobile development and backend engineering. Drop a line and I'll get back to you.</p>
+      <div class="contact-links">
+        <a class="icon-link" href="mailto:pingol.krysscainelee@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M4 6l8 7 8-7"/></svg>
+        </a>
+        <a class="icon-link" href="https://github.com/seollemi" target="_blank" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 00-1.3-3.2 4.2 4.2 0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 00-6.2 0C7.5 4.8 6.4 5.1 6.4 5.1a4.2 4.2 0 00-.1 3.2A4.6 4.6 0 005 11.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V23"/></svg>
+        </a>
+        <a class="icon-link" href="https://linkedin.com/in/kcpingol" target="_blank" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/><path d="M10 9h4v2a4 4 0 018 0v9h-4v-8a2 2 0 00-4 0v8h-4z"/></svg>
+        </a>
+      </div>
+      <div class="contact-meta mono">pingol.krysscainelee@gmail.com</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap mono">©2026 KC Pingol.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
